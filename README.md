@@ -7,8 +7,6 @@ StateStore API client for [Dux](https://github.com/asbjornenge/dux).
     npm install dux-statestore-api-client
 
 ## Use
-    this.host     = options['statestore-host']
-    this.port     = options['statestore-port']
 
     var client = require('dux-statestore-api-client')({
         'statestore-host' : 'dux-statestore.dux.test',
