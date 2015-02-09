@@ -1,8 +1,8 @@
 var request = require('request')
 
 var StatestoreAPI = function(options) {
-    this.host     = options['statestore-host']
-    this.port     = options['statestore-port']
+    this.host     = options.host
+    this.port     = options.port
 }
 StatestoreAPI.prototype = {
 

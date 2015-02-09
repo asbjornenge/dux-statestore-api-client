@@ -9,14 +9,18 @@ StateStore API client for [Dux](https://github.com/asbjornenge/dux).
 ## Use
 
     var client = require('dux-statestore-api-client')({
-        'statestore-host' : 'dux-statestore.dux.test',
-        'statestore-port' : 8000
+        host : 'dux-statestore.dux.test',
+        port : 8000
     })
     client.getState('/containers', function(err, containers) {
         console.log(err, container)
     })
 
 ## Changelog
+
+### 2.0.0
+
+* De-agrumentified the options
 
 ### 1.0.0
 
