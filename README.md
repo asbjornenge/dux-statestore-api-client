@@ -12,9 +12,10 @@ StateStore API client for [Dux](https://github.com/asbjornenge/dux).
         host : 'dux-statestore.dux.test',
         port : 8000
     })
-    client.getState('/containers', function(err, containers) {
-        console.log(err, container)
-    })
+    client.on('up', client.getState.bind(client, '/containers', function(err, containers) {
+        console.log(err, containers)
+    }))
+    client.listen()
 
 ## Changelog
 
