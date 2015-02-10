@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/asbjornenge/dux-statestore-api-client",
   "dependencies": {
-    "request": "^2.53.0"
+    "object.assign": "^1.1.1",
+    "request": "^2.53.0",
+    "retry-connection": "^1.0.1"
   }
 }
